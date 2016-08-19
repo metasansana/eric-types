@@ -1,0 +1,25 @@
+{
+    "name": "eric-types",
+    "version": "0.0.1",
+    "description": "Types for the eric task runner.",
+    "main": "lib/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "rm -R lib; mkdir -p lib; npm run parser; ./node_modules/.bin/babel -s inline -D src -d lib"
+    },
+    "dependencies": {
+        "babel-core": "^6.9.1",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-transform-export-extensions": "^6.8.0",
+        "babel-preset-es2015": "^6.9.0",
+        "bluebird": "^3.4.1",
+        "nunjucks": "^2.4.2"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.11.4",
+        "mocha": "^2.5.3",
+        "must": "^0.13.2"
+    },
+    "author": "Lasana Murray <lmurray@quenk.com> (http://quenk.com)",
+    "license": "Apache-2.0"
+}
